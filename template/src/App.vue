@@ -18,7 +18,7 @@
         name: 'app'{{#router}}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
         components: {
             Hello,
-        },
+        },{{/router}}
     }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
 
