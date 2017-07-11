@@ -4,11 +4,15 @@
 {{/if_eq}}
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import CroudLayout from 'croud-layout'
 {{#router}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
 
+import store from './store'
+
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.use(CroudLayout, { store })
 
 /* eslint-disable no-new */
 new Vue({
@@ -20,7 +24,8 @@ new Vue({
   render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   {{/if_eq}}
   {{#if_eq build "standalone"}}
-  template: '<App/>',
+  template: '<croud-layout><App/></croud-layout>',
+  store,
   components: { App }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   {{/if_eq}}
 }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}

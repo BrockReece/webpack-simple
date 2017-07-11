@@ -15,8 +15,11 @@
   },
   "dependencies": {
     "croud-layout": "^1.1.1",
-    "vue": "^2.3.3"{{#router}},
-    "vue-router": "^2.3.1"{{/router}}
+    "vue": "^2.3.3",
+    {{#router}}
+    "vue-router": "^2.3.1",
+    {{/router}}
+    "vuex": "^2.3.1",
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
