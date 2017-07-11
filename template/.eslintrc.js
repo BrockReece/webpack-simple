@@ -32,7 +32,6 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 0,
     {{/if_eq}}
-    {{#if_eq lintConfig "airbnb"}}
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       'js': 'never',
@@ -42,7 +41,6 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', {
       'optionalDependencies': ['test/unit/index.js']
     }],
-    {{/if_eq}}
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
