@@ -9,13 +9,7 @@ module.exports = {
   env: {
     browser: true,
   },
-  {{#if_eq lintConfig "standard"}}
-  // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-  extends: 'standard',
-  {{/if_eq}}
-  {{#if_eq lintConfig "airbnb"}}
-  extends: 'airbnb-base',
-  {{/if_eq}}
+  extends: 'croud',
   // required to lint *.vue files
   plugins: [
     'html'
