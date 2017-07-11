@@ -15,7 +15,7 @@
 
 {{/unless}}
     export default {
-        name: 'app'{{#router}}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
+        name: 'app',{{#router}}{{else}}
         components: {
             Hello,
         },{{/router}}
