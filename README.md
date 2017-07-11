@@ -1,3 +1,9 @@
+# Croud-Vue
+Opintionated Fork of the vue webpack generator for Croud
+``` bash
+vue init CroudSupport/webpack my-project
+```
+
 # vue-webpack-boilerplate
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
