@@ -6,8 +6,8 @@ import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import CroudSemantic from 'croud-vue-semantic'
 import CroudLayout from 'croud-layout'
 import axios from 'croud-layout/src/axios'
-import 'croud-layout/semantic/dist/semantic.min'
-import 'croud-layout/semantic/dist/semantic.min.css'
+import 'croud-style-guide/semantic/dist/semantic.min'
+import 'croud-style-guide/semantic/dist/semantic.min.css'
 
 import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#router}}
