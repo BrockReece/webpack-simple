@@ -1,7 +1,7 @@
 # Croud-Vue
 Opintionated Fork of the vue webpack generator for Croud
 ``` bash
-vue init CroudSupport/webpack my-project
+vue init BrockReece/webpack-simple my-project
 ```
 
 # vue-webpack-boilerplate
