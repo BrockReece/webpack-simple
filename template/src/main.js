@@ -8,6 +8,7 @@ import CroudLayout from 'croud-layout'
 import axios from 'croud-layout/src/axios'
 import 'croud-style-guide/semantic/dist/semantic.min'
 import 'croud-style-guide/semantic/dist/semantic.min.css'
+import '../../../src/gateway'
 
 import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#router}}
